@@ -1,0 +1,34 @@
+
+
+:root{
+  --color-primary-light:#A6FB98;
+  --color-primary-dark:#78E3D1;
+  --white:#FFFFFF;
+  --grey:#BFBFBF;
+  --dark:#030007;
+  --dark-200:#08040D;
+  --dark-400:#130B1D;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+ 
+}
+body{
+  background-color: var(--dark);
+}
+.container{
+  max-width: 1216px;
+  width: 100%;
+  margin:0  auto;
+}

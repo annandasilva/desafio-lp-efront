@@ -1,0 +1,452 @@
+:root {
+  --color-primary-light:#A6FB98;
+  --color-primary-dark:#78E3D1;
+  --white:#FFFFFF;
+  --grey:#BFBFBF;
+  --dark:#030007;
+  --dark-200:#08040D;
+  --dark-400:#130B1D; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: var(--dark); }
+
+.container {
+  max-width: 1216px;
+  width: 100%;
+  margin: 0  auto; }
+
+.promo {
+  background-color: var(--color-primary-light);
+  height: 4rem; }
+  .promo p {
+    color: var(--dark);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    padding-top: 0.8rem; }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem; }
+  .menu .navbar {
+    display: flex;
+    gap: 4.8rem;
+    align-items: center; }
+    .menu .navbar .nav-links {
+      display: flex;
+      gap: 4.8rem; }
+      .menu .navbar .nav-links a {
+        text-decoration: none;
+        color: var(--grey);
+        font-family: 'Inter', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        transition: all 0.3s; }
+      .menu .navbar .nav-links a:hover {
+        color: var(--white); }
+    .menu .navbar .btn-header {
+      background-color: transparent;
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      padding: 1.4rem 2.4rem;
+      border: 1px solid var(--color-primary-light);
+      border-radius: 4px;
+      cursor: pointer; }
+      .menu .navbar .btn-header:hover {
+        background: var(--color-primary-light);
+        color: var(--dark); }
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 10.4rem; }
+  .hero .contedo {
+    margin-top: 5rem;
+    max-width: 59.2rem; }
+    .hero .contedo .membros {
+      margin-top: 18rem;
+      padding: 0.8rem 3.2rem 0.8rem 4rem;
+      background-color: var(--dark-200);
+      display: inline-block;
+      border-radius: 3.2rem;
+      border: 1px solid rgba(19, 11, 29, 0.5); }
+      .hero .contedo .membros .membros-text {
+        color: var(--white);
+        font-family: 'Inter', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 150%;
+        margin-left: 0.8rem;
+        position: relative; }
+      .hero .contedo .membros .membros-text::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 2.8rem;
+        height: 100%;
+        width: 100%;
+        background: url(../img/icon-student.svg) no-repeat; }
+    .hero .contedo .headline {
+      margin-top: 4rem;
+      color: var(--white);
+      font-family: 'Sora';
+      font-size: 4.8rem;
+      line-height: 120%; }
+      .hero .contedo .headline span {
+        background: linear-gradient(227.23deg, #78E3D1 7.65%, #A6FB98 67.82%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent; }
+    .hero .contedo .subtitulo {
+      color: var(--grey);
+      font-family: 'Inter', sans-serif;
+      font-size: 2.6rem; }
+  .hero .preco {
+    margin-top: 14rem;
+    padding-top: 3.2rem;
+    padding-left: 3.2rem;
+    padding-bottom: 4rem;
+    background-color: var(--white);
+    width: 100%;
+    height: 50rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 0.4rem; }
+    .hero .preco .btn-header {
+      cursor: pointer;
+      font-family: 'Sora',sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: var(--dark);
+      background: var(--color-primary-light);
+      border-radius: 4px;
+      max-width: 45.6rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border: none;
+      margin-top: 7.6rem; }
+      .hero .preco .btn-header:hover {
+        background: var(--color-primary-dark); }
+    .hero .preco .formas-pagamento {
+      font-family: 'Inter',sans-serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 150%;
+      margin-top: 2.4rem;
+      text-align: center; }
+    .hero .preco .preco-titulo {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem; }
+      .hero .preco .preco-titulo span {
+        font-family: 'Sora',sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--white);
+        background-color: var(--dark);
+        padding: 0.8rem 2.8rem;
+        border-radius: 0.4rem; }
+      .hero .preco .preco-titulo p {
+        font-family: 'Inter',sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 150%; }
+    .hero .preco .valor .preco-real {
+      font-family: 'Sora',sans-serif;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 150%;
+      color: var(--dark-200);
+      padding-top: 5.6rem; }
+      .hero .preco .valor .preco-real span {
+        text-decoration: line-through; }
+      .hero .preco .valor .preco-real p {
+        font-family: 'Sora',sans-serif;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--dark-200);
+        padding-top: 5.6rem; }
+    .hero .preco .valor h3 {
+      font-family: 'Sora',sans-serif;
+      font-size: 7.2rem;
+      font-weight: 700;
+      line-height: 150%;
+      color: var(--dark-200); }
+
+.beneficios {
+  margin-top: 14rem;
+  margin-bottom: 14rem; }
+
+.sobre .box {
+  display: flex;
+  max-width: 121.6rem;
+  height: 53.3rem;
+  margin: 0 auto;
+  background-color: var(--dark-200);
+  border: 1px solid var(--dark-400);
+  border-radius: 0.4rem;
+  gap: 2.4rem; }
+
+.sobre .foto-iuri {
+  position: relative; }
+  .sobre .foto-iuri img {
+    display: block;
+    margin: 4.2rem;
+    width: 45rem;
+    height: 45rem;
+    border-radius: 0.4rem; }
+  .sobre .foto-iuri span {
+    display: inline-block;
+    padding-top: 0.6rem;
+    text-align: center;
+    font-family: 'Sora',sans-serif;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: var(--white);
+    width: 14rem;
+    height: 2.8rem;
+    border-radius: 1.6rem;
+    position: absolute;
+    top: 6.4rem;
+    left: 6.4rem; }
+
+.sobre .conteudo {
+  color: var(--white);
+  margin-top: 9.5rem; }
+  .sobre .conteudo span {
+    margin-bottom: 0.8rem;
+    font-family: 'Sora',sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    background: linear-gradient(227.23deg, #78E3D1 7.65%, #A6FB98 67.82%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; }
+  .sobre .conteudo h3 {
+    font-family: 'Sora',sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 150%;
+    margin-bottom: 0.8rem; }
+  .sobre .conteudo .profissao {
+    font-family: 'Sora',sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem; }
+  .sobre .conteudo .descricao {
+    max-width: 62.2rem;
+    margin-top: 4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: var(--grey); }
+  .sobre .conteudo .social-icons {
+    margin-top: 5.7rem;
+    display: flex;
+    gap: 3.2rem; }
+    .sobre .conteudo .social-icons img {
+      padding: 0.8rem;
+      background-color: var(--dark);
+      border: 1px solid var(--dark-400);
+      border-radius: 0.6rem;
+      cursor: pointer; }
+      .sobre .conteudo .social-icons img:hover {
+        border: 1px solid var(--color-primary-light); }
+
+.conteudo-ebook {
+  margin-top: 14rem; }
+  .conteudo-ebook h2 {
+    max-width: 52.2rem;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 140%;
+    color: var(--white);
+    margin-bottom: 5.6rem; }
+    .conteudo-ebook h2 span {
+      background: linear-gradient(227.23deg, #78E3D1 7.65%, #A6FB98 67.82%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent; }
+
+.cta {
+  margin-top: 14rem; }
+  .cta .box-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 121.6rem;
+    height: 50rem;
+    margin: 0 auto;
+    background-color: var(--dark-200);
+    border: 1px solid var(--dark-400);
+    border-radius: 0.4rem;
+    gap: 2.4rem; }
+    .cta .box-cta .cta-preco {
+      text-align: center; }
+      .cta .box-cta .cta-preco p {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: var(--grey);
+        margin-top: 3.2rem; }
+        .cta .box-cta .cta-preco p span {
+          text-decoration: line-through; }
+        .cta .box-cta .cta-preco p .cta-formas-pagamento {
+          font-family: 'Inter';
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 150%;
+          text-align: center;
+          margin-top: 1.6rem !important; }
+      .cta .box-cta .cta-preco h2 {
+        max-width: 32.7rem;
+        font-family: 'Sora';
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 130%;
+        text-align: center;
+        color: var(--white); }
+        .cta .box-cta .cta-preco h2 span {
+          background: linear-gradient(227.23deg, #78E3D1 7.65%, #A6FB98 67.82%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent; }
+      .cta .box-cta .cta-preco h3 {
+        margin-top: 0.8rem;
+        font-family: 'Sora';
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 130%;
+        text-align: center;
+        color: var(--white); }
+      .cta .box-cta .cta-preco .btn-cta {
+        cursor: pointer;
+        font-family: 'Sora',sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: var(--dark);
+        background: var(--color-primary-light);
+        border-radius: 4px;
+        max-width: 28.2rem;
+        padding: 2rem 3.2rem;
+        border: none;
+        margin-top: 5.6rem; }
+    .cta .box-cta .cta-vantagens {
+      margin-left: 18rem;
+      color: var(--white); }
+      .cta .box-cta .cta-vantagens h2 {
+        max-width: 34.7rem;
+        font-family: 'Sora',sans-serif;
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 130%; }
+      .cta .box-cta .cta-vantagens ul {
+        padding-left: 4.6rem;
+        list-style: none;
+        margin-top: 4rem; }
+        .cta .box-cta .cta-vantagens ul li {
+          font-family: 'Inter';
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 150%;
+          color: var(--grey);
+          position: relative; }
+          .cta .box-cta .cta-vantagens ul li:not(:first-child) {
+            margin-top: 1.2rem; }
+          .cta .box-cta .cta-vantagens ul li::before {
+            content: " ";
+            display: inline-block;
+            height: 3.2rem;
+            width: 3.2rem;
+            background-image: url(../img/Check.svg);
+            position: absolute;
+            left: -4.6rem; }
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 3.4rem; }
+  .cards .cards-bottom {
+    margin-top: 3.2rem; }
+  .cards .card {
+    background-color: var(--dark-200);
+    border: 1px solid var(--dark-400);
+    border-radius: 0.4rem;
+    width: 100%;
+    max-width: 28rem;
+    height: 27.6rem;
+    padding: 2.4rem; }
+    .cards .card h3 {
+      font-family: 'Sora',sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 150%;
+      color: var(--white);
+      padding-top: 2.4rem; }
+    .cards .card p {
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 150%;
+      color: var(--grey);
+      max-width: 23.2rem;
+      padding-top: 1.6rem; }
+
+footer {
+  margin-top: 9.2rem;
+  height: 5.4rem;
+  background-color: var(--dark-200); }
+  footer .footer {
+    padding-top: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .footer .powered {
+      display: flex;
+      gap: 1.6rem; }
+    footer .footer p {
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 19px;
+      color: var(--white); }
+      footer .footer p span {
+        background: linear-gradient(227.23deg, #78E3D1 7.65%, #A6FB98 67.82%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent; }
