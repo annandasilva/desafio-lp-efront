@@ -13,6 +13,12 @@
     border: 1px solid var(--dark-400);
     border-radius: 0.4rem;
     gap: 2.4rem;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      height: 100%;
+      margin-left: 2.4rem;
+      margin-right: 2.4rem;
+    }
   }
   .foto-iuri{
     position: relative;
@@ -22,6 +28,11 @@
       width: 45rem;
       height: 45rem;
       border-radius: 0.4rem;
+      @media only screen and (max-width: $bp-medium) {
+        width: 36.4rem;
+         height: 30rem;
+         margin-left: 3.2rem;
+      }
       
     }
     span{
@@ -46,6 +57,14 @@
   .conteudo{
     color: var(--white);
     margin-top: 9.5rem;
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 4.2rem;
+      margin-top: 0;
+      margin-right: 3.2rem;
+      padding-bottom: 3.2rem;
+      
+       
+    }
     span{
       margin-bottom: 0.8rem;
       font-family: 'Sora',sans-serif;
@@ -83,6 +102,10 @@
       margin-top: 5.7rem;
       display: flex;
       gap: 3.2rem;
+      @media only screen and (max-width: $bp-medium) {
+        flex-wrap: wrap;
+         
+      }
       img{
         padding: 0.8rem;
         background-color: var(--dark);
@@ -92,6 +115,7 @@
         &:hover{
           border: 1px solid var(--color-primary-light);
         }
+       
       }
     }
   }
@@ -107,6 +131,10 @@
     line-height: 140%;
     color: var(--white);
     margin-bottom: 5.6rem;
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 2.4rem;
+       
+    }
     span{
       background: linear-gradient(227.23deg, #78E3D1 7.65%, #A6FB98 67.82%);
       -webkit-background-clip: text;
@@ -129,6 +157,14 @@
     border: 1px solid var(--dark-400);
     border-radius: 0.4rem;
     gap: 2.4rem;
+    margin-bottom: 5.6rem;
+    @media only screen and (max-width: $bp-medium) {
+     flex-direction: column;
+     height: 100%;
+     margin: 2.4rem;
+     padding: 3.2rem 0;
+       
+    }
     .cta-preco{
       text-align: center;
       p{ 
@@ -191,10 +227,17 @@
         padding: 2rem 3.2rem;
         border: none;
         margin-top: 5.6rem;
+        &:hover{
+          background: var(--color-primary-dark);
+        }
       }
     }
     .cta-vantagens{
       margin-left: 18rem;
+      @media only screen and (max-width: $bp-medium) {
+        margin-left: 0;
+          
+       }
       h2{
         max-width: 34.7rem;
         font-family: 'Sora',sans-serif;

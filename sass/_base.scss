@@ -2,14 +2,18 @@
 
 :root{
   --color-primary-light:#A6FB98;
-  --color-primary-dark:#78E3D1;
+  --color-primary-dark:#87DA7A;
   --white:#FFFFFF;
   --grey:#BFBFBF;
   --dark:#030007;
   --dark-200:#08040D;
   --dark-400:#130B1D;
 }
-
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px
 *{
   margin: 0;
   padding: 0;
