@@ -112,7 +112,7 @@ body {
       @media only screen and (max-width: 56.25em) {
         .hero .contedo .membros {
           margin-top: 0.8rem;
-          padding: 0.8rem 8.8rem 0.8rem 12rem; } }
+          padding: 0.8rem 4.4rem 0.8rem 8rem; } }
       .hero .contedo .membros .membros-text {
         color: var(--white);
         font-family: 'Inter', sans-serif;
@@ -191,9 +191,8 @@ body {
         background: var(--color-primary-dark); }
       @media only screen and (max-width: 56.25em) {
         .hero .preco .btn-header {
-          padding: 2rem 6.4rem;
           margin-right: 3.2rem;
-          font-size: 2rem; } }
+          font-size: 1.6rem; } }
     .hero .preco .formas-pagamento {
       font-family: 'Inter',sans-serif;
       font-size: 1.8rem;
@@ -245,6 +244,9 @@ body {
       font-weight: 700;
       line-height: 150%;
       color: var(--dark-200); }
+      @media only screen and (max-width: 56.25em) {
+        .hero .preco .valor h3 {
+          font-size: 6.4rem; } }
 
 .beneficios {
   margin-top: 14rem;
