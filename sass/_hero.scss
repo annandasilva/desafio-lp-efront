@@ -32,6 +32,9 @@
       line-height: 150%;
       margin-left: 0.8rem;
       position: relative;
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1.6rem;
+     }
     }
     .membros-text::before{
      content: "";

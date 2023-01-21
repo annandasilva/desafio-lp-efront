@@ -47,11 +47,15 @@ body {
   @media only screen and (max-width: 56.25em) {
     .menu {
       flex-direction: column;
-      align-items: center; } }
+      text-align: center; } }
   .menu .navbar {
     display: flex;
     gap: 4.8rem;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .menu .navbar {
+        flex-direction: column;
+        padding: 2.4rem; } }
     .menu .navbar .nav-links {
       display: flex;
       gap: 4.8rem; }
@@ -84,9 +88,7 @@ body {
         color: var(--dark); }
       @media only screen and (max-width: 56.25em) {
         .menu .navbar .btn-header {
-          margin-top: 4rem;
-          width: 44.8rem;
-          margin-right: 24rem; } }
+          width: 100%; } }
 
 .hero {
   display: flex;
@@ -119,6 +121,9 @@ body {
         line-height: 150%;
         margin-left: 0.8rem;
         position: relative; }
+        @media only screen and (max-width: 56.25em) {
+          .hero .contedo .membros .membros-text {
+            font-size: 1.6rem; } }
       .hero .contedo .membros .membros-text::before {
         content: "";
         position: absolute;
@@ -271,9 +276,10 @@ body {
     border-radius: 0.4rem; }
     @media only screen and (max-width: 56.25em) {
       .sobre .foto-iuri img {
-        width: 36.4rem;
-        height: 30rem;
-        margin-left: 3.2rem; } }
+        width: 32rem;
+        height: 32rem;
+        margin: 0 auto;
+        padding-top: 2.4rem; } }
   .sobre .foto-iuri span {
     display: inline-block;
     padding-top: 0.6rem;
