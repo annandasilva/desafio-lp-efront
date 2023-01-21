@@ -391,7 +391,7 @@ body {
         flex-direction: column;
         height: 100%;
         margin: 2.4rem;
-        padding: 3.2rem 0; } }
+        padding: 3.2rem 1.6rem; } }
     .cta .box-cta .cta-preco {
       text-align: center; }
       .cta .box-cta .cta-preco p {
